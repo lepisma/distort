@@ -2,7 +2,7 @@
 
 A few experiments with lexical distortion.
 
-* Finnegans Wake
+** Finnegans Wake
 
 #+begin_quote
 riverrun, past Eve and Adam’s, from swerve of shore to bend of bay, brings us by
