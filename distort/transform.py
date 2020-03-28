@@ -2,15 +2,16 @@
 Transforming from one space to other
 """
 
-from typing import List, Optional
 import re
+from typing import List, Optional
+
 import cmudict
 
 CMUDICT = cmudict.dict()
 PHONES = cmudict.phones()
 
 
-def g2p(graphemes: List[str]) -> Optional[List[str]]:
+def graphemes_to_phonemes(graphemes: List[str]) -> Optional[List[str]]:
     """
     Basic cmudict based English g2p.
     """
@@ -24,11 +25,11 @@ def g2p(graphemes: List[str]) -> Optional[List[str]]:
     return CMUDICT[word][0]
 
 
-def p2g(phonemes: List[str]) -> List[str]:
+def phonemes_to_graphemes(phonemes: List[str]) -> List[str]:
     raise NotImplementedError()
 
 
-def p2type(phoneme: str) -> Optional[str]:
+def phoneme_type(phoneme: str) -> Optional[str]:
     """
     Return phone type based on CMUDICT.
     """
