@@ -438,6 +438,17 @@ python-versions = "*"
 version = "0.6.0"
 
 [[package]]
+category = "main"
+description = "The kitchen sink of Python utility libraries for doing \"stuff\" in a functional way. Based on the Lo-Dash Javascript library."
+name = "pydash"
+optional = false
+python-versions = "*"
+version = "4.7.6"
+
+[package.extras]
+dev = ["coverage", "flake8", "mock", "pylint", "pytest", "pytest-cov", "sphinx", "sphinx-rtd-theme", "tox", "twine", "wheel"]
+
+[[package]]
 category = "dev"
 description = "Pygments is a syntax highlighting package written in Python."
 name = "pygments"
@@ -626,7 +637,7 @@ version = "3.5.1"
 notebook = ">=4.4.1"
 
 [metadata]
-content-hash = "f2e457a757da24c2462eda1c09ee7c40c139a574d5f58be6faf6e7ab9c102172"
+content-hash = "a2879a6313a8a2fafe1d0c1bf311c9cf0fd3e9f9d6838d6c585ed92ecca6e1a4"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -785,6 +796,10 @@ prompt-toolkit = [
 ptyprocess = [
     {file = "ptyprocess-0.6.0-py2.py3-none-any.whl", hash = "sha256:d7cc528d76e76342423ca640335bd3633420dc1366f258cb31d05e865ef5ca1f"},
     {file = "ptyprocess-0.6.0.tar.gz", hash = "sha256:923f299cc5ad920c68f2bc0bc98b75b9f838b93b599941a6b63ddbc2476394c0"},
+]
+pydash = [
+    {file = "pydash-4.7.6-py2.py3-none-any.whl", hash = "sha256:bc9762159c3fd1f822b131a2d9cbb2b2036595a42ad257d2d821b29803d85f7d"},
+    {file = "pydash-4.7.6.tar.gz", hash = "sha256:a7733886ab811e36510b44ff1de7ccc980327d701fb444a4b2ce395e6f4a4a87"},
 ]
 pygments = [
     {file = "Pygments-2.6.1-py3-none-any.whl", hash = "sha256:ff7a40b4860b727ab48fad6360eb351cc1b33cbf9b15a0f689ca5353e9463324"},
