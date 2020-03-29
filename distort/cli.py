@@ -24,8 +24,8 @@ def main():
             p = float(args["--p"])
 
             pieces = [[list(word) for word in line.split()] for line in sys.stdin]
-            unique_pieces = set(py_.flatten_deep(pieces))
+            unique_pieces = list(set(py_.flatten_deep(pieces)))
 
             for line in pieces:
-                d_words = ["".join(replace_with_p(word, unique_pieces, p=p)) for word in line]
+                d_words = ["".join(replace_with_p(word, [unique_pieces], p=p)) for word in line]
                 print(" ".join(d_words))
