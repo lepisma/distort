@@ -1,6 +1,8 @@
 #+TITLE: distort
 
-A few experiments with lexical distortion.
+A few experiments with lexical distortions. Specifically the ones which play
+around with the semantics. Consider for example the various acoustic puns from
+Finnegans Wake and errors like spoonerism.
 
 ** Finnegans Wake
 
